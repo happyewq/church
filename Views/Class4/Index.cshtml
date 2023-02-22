@@ -1,0 +1,76 @@
+﻿@model IEnumerable<learn.Models.Class4>
+
+@{
+}
+ 
+
+<div style="position: absolute; left:180px;top:40px;width:80%;height:80%">
+<br />
+<br/>
+<br/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phonenumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MailAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phonenumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MailAddress)
+            </td>
+            <td>
+                       
+                <a asp-action="Edit" asp-route-id="@item.Id"><img src="~/lib/Edit.png" style="width:30px; height:30px;"></img></a> |
+                <a asp-action="Details" asp-route-id="@item.Id"><img src="~/lib/detail.jpg" style="width:30px; height:30px;"></img></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id"><img src="~/lib/Delete.jpg" style="width:30px; height:30px;"></img></a> |
+
+                    </td>
+                    
+        </tr>
+}
+            <p>
+                <h4><a asp-action="Create"><img src="~/lib/new1.png " style="width:40px; height:40px;"></a></h4>
+                
+            </p>
+            <form asp-controller="Class4" asp-action="Index" method="get">
+    
+    <p>
+        Name: <input type="text"  name="SearchString" />
+                    
+                    <button type='sumbit'><img src="~/lib/search.png" style="width:25px; height:25px;"></button>
+    </p>
+    
+</form>
+</div>
+    </tbody>
+</table>

@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="import" href="time.html"/>
+  <meta charset="UTF-8">
+  <title>E1 </title>
+
+  <style>
+    * 
+    .wrap {
+      width: 100vw;
+      height: 100vh;
+      
+      background-position: center center;
+    }
+    .bubbles {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .bubble {
+      width: 10px;
+      height: 10px;
+      border: 1px solid rgb(210, 93, 93);
+      border-radius: 50%;
+      position: absolute;
+      bottom: -10%;
+      animation: up 7s ease-in-out;
+    }
+
+    @@keyframes up {
+      from {
+        bottom: -10%;
+        opacity: 1;
+      }
+      to {
+        bottom: 110%;
+        opacity: .5;
+      }
+    }
+  </style>
+
+  <!--這裡開始是time-->
+  
+  <link href="https://fonts.font.im/css?family=Monoton" rel="stylesheet">
+
+  <style>
+    *
+    body {
+      height: 100vh;
+  
+    }
+    .neon-wrap {
+      width: 100vw;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .neon-text {
+      font-family: 'Monoton', cursive;
+      font-size: 30px;
+      color: #c614f3;
+      text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+    }
+    .neon-blink {
+      animation: neon 4s infinite;
+    }
+    .neon-clock {
+      font-family: 'Monoton', cursive;
+      font-size: 45px;
+      color: #c4e479;
+      text-shadow: -3px 0px 5px #000000, 0px 0px 2px #FFEB3B;
+    }
+    .neon-by {
+      color: #bbdefb;
+      text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+    }
+    @@keyframes neon {
+      0%, 30%, 32%, 34% {
+        color: #222;
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222; 
+      }
+      31%, 33%, 35%, 100% {
+        color: #16e473;
+        text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bubbles" num="50" duration="10">
+    </div>
+  </div>
+  <link rel="stylesheet" href="style1.css">
+  <div style="position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);">
+  <form action="https://webcourse.nmg.cs.thu.edu.tw/E2/s08352041/l.html">
+   <button class="btn btn1" id="btn1">簽到退</button> </form>
+  <br/>
+  <form action="https://webcourse.nmg.cs.thu.edu.tw/E2/s08352041/l.html">
+  <button class="btn btn2" id="btn2">專題生管理</button></form>
+  <br/>
+  <form action="https://webcourse.nmg.cs.thu.edu.tw/E2/s08352041/l.html">
+  <button class="btn btn3" id="btn3">演講管理</button></form>
+  <div id="list">
+
+  </div>
+  </div>    
+  </div> 
+  <script src="E1.js"></script>
+
+  <script>
+    (function(w, d) {
+
+      var bubbles = d.querySelector('.bubbles');
+      var bubblesWidth = bubbles.clientWidth;
+      var num = bubbles.getAttribute('num');
+      var duration = bubbles.getAttribute('duration');
+
+      bubbleUp();
+      setInterval(bubbleUp, duration * 1000);
+
+      function bubbleUp() {
+        bubbles.innerHTML = '';
+        for(var i = 0; i < num; i++) {
+          var bubbleDiv = d.createElement('div');
+          bubbleDiv.classList.add('bubble');
+          bubbleDiv.style.cssText = `
+            transform: translate(${bubblesWidth * Math.random()}px, 0) scale(${5 * Math.random()});
+            animation: up ${duration * Math.random() + 1}s ease-in-out;
+          `
+          bubbles.appendChild(bubbleDiv);
+        };
+      };
+
+    })(window, document);
+  </script>
+
+<!--這裡開始是time-->
+
+<div class="neon-wrap">
+  <div class="neon-text">
+    CL<span class="neon-blink">O</span>C<span class="neon-blink">K</span>
+  </div>
+  <div class="neon-clock">
+    <span class="timer-num">1</span>
+    <span class="timer-num">2</span>
+    <span class="timer-sep">:</span>
+    <span class="timer-num">4</span>
+    <span class="timer-num">5</span>
+    <span class="timer-sep">:</span>
+    <span class="timer-num">7</span>
+    <span class="timer-num">8</span>
+  </div>
+  
+</div>
+
+<script>
+  (function(w, d){
+
+    var timerCache = '',  //时间缓存
+        timerNum = d.querySelectorAll('.timer-num');  //取得dom对象
+
+    // 计时器，200ms执行一次
+    setInterval(timerUpdata, 200);
+
+    // 时间更新
+    function timerUpdata(){
+      var timerArr = timerHandler(new Date());
+      // 时间不变时立即返回
+      if(timerArr == null){
+        return;
+      }
+      //时间更新 dom
+      timerNum.forEach(function(element, index){
+        element.innerHTML = timerArr ? timerArr[index] : '-';//三元运算符，数组存在就替换
+      });
+    }
+
+    /**
+    * 时间数据处理
+    * @@param {dateObj} 形参时间对象
+    * @@returns {Array} 返回时间数组
+    */
+    function timerHandler(dateObj){
+      var hours = ('0' + dateObj.getHours()).slice(-2); //加 0 防止出现一位数
+      var min = ('0' + dateObj.getMinutes()).slice(-2); //通过slice 截取最后两位
+      var sec = ('0' + dateObj.getSeconds()).slice(-2);
+      var timerStr = hours + min + sec;
+      // 时间不变时返回null
+      if(timerStr == timerCache) {
+        return null;
+      }
+      timerCache = timerStr;//时间改变，更新缓存
+      return timerStr.split(''); //字符串转换数组，并返回
+    }
+  })(window, document);
+
+</script>
+
+
+</body>
+</html>

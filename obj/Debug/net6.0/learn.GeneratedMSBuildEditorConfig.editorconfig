@@ -1,0 +1,124 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = learn
+build_property.RootNamespace = learn
+build_property.ProjectDir = C:\Users\jason\OneDrive\桌面\新增資料夾\learn\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jason\OneDrive\桌面\新增資料夾\learn
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Class4/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3M0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Class4/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3M0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Class4/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3M0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Class4/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3M0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Class4/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3M0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Index8.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleDguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Lesson1/Indexhellow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uMVxJbmRleGhlbGxvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/Indexpag1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGV4cGFnMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/Layoutpage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dHBhZ2UyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXHRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-s8niiqidzf
+
+[C:/Users/jason/OneDrive/桌面/新增資料夾/learn/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jph6chccmf
